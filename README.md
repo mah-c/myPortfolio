@@ -6,7 +6,7 @@ Welcome to my personal portfolio website built with **HTML** and **CSS**. This p
 
 ## 🚀 Live Demo
 
-🔗 [View Portfolio Website](https://mah-c.github.io/portfolio) *(Replace with your actual link after deploying)*
+🔗 https://mah-c.github.io/myPortfolio/
 
 ---
 
@@ -54,6 +54,9 @@ portfolio/
 You can simply open index.html with any browser, or
 Use Live Server extension in VS Code for auto-refreshing preview.
 
+📸 Screenshot Preview
+assets/screenshot.png
+
 🧪 Future Enhancements
  Connect the contact form to a backend (e.g., Formspree or Firebase)
  Add animations for smooth transitions
@@ -65,8 +68,8 @@ I’m Mercy Benu, a passionate Web Developer, Security Analyst, and Android App 
 Currently learning through the Power Learn Project (PLP) and actively building secure, mobile-first applications.
 
 📧 benumercy1@gmail.com
-🔗 LinkedIn
-🔗 GitHub
+🔗 https://linkedin.com/in/mercybenu
+🔗 https://github.com/mah-c
 
 📄 License
 This project is licensed under the MIT License.
