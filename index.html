@@ -3,44 +3,152 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>MercyBenu-Portfolio</title>
+
+    <!-- Link to external CSS file -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body><!--there should be a banner on top of the navbar with (Mercy Benu-Portfolio)-->
-    <ol>
-      <li>Home</li>
-      <li>About</li>
-      <li>Skills</li>
-      <li>Education background</li>
-      <li>Interests</li>
-      <li>Projects</li>
-      <!---I might consider removing this part in the meantime-->
-      <li>Contact</li>
-    </ol>
-    <h1>Front end web developer</h1>
-    <p>
-      I'm Mercy Benu, a front end web developer as well as a mobile apps
-      developer(Android). My driving force is using technology to develope
-      solutions to real world problems.
-    </p>
-    <h1>About me</h1>
-    <p>I hold a bachelors degree in computer science from Kirinyaga University. I have specialized in intermediate level Cybersecurity Skills and Mobile app development(Android). This is because the world of software development is closely knit with Cybersecurity especiallywhen it comes to developing secure apps and ensuring users feel safe while conducting their day to day online activities.</p>
-    <h1>Skills</h1><!--this should be in cards-->
-    <ul>
-        <li>web languages ie html,css,django</li>
-        <li>Programming languages ie python, flutter</li>
-        <li>Cloud  computing ie AWS certified</li>
-    </ul>
-    <h1>Educationbackground</h1>
-    <p>Click here to download my detailed cv</p><!--use a sliding-like button for the attached cv-->
-    <h1>Contact Me</h1>
-    <form action="Post">
-        <p>Feel free to reach out</p>
-        <input type="text" name="email" placeholder="ente your email.">
-        <textarea name="Comments" rows="4" cols="50" placeholder="Feedback"></textarea>
-        <button type="submit">Submit</button>
-    </form>
+  <body id="top">
+    <!-- Header section with navigation bar -->
+    <header>
+      <nav class="navbar">
+        <h1 class="logo">Portfolio</h1>
+
+        <!-- Navigation links -->
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#Experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <h2>Mercy Benu - <span class="highlight">Portfolio</span></h2>
+        <p>Web Developer | Security Analyst | Mobile App Developer</p>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <h2>About Me</h2>
+
+      <div class="about-container">
+        <!-- About text -->
+        <div class="about-text">
+          <p>
+            I hold a Bachelor's degree in Computer Science from Kirinyaga
+            University, with a background in intermediate-level cybersecurity.
+            I'm currently learning software development through the Power Learn
+            Project (PLP), with a focus on Android mobile app development. My
+            goal is to create secure, user-friendly apps, combining my
+            cybersecurity knowledge with software skills to ensure safe digital
+            experiences.
+          </p>
+
+          <!-- Download CV Button -->
+          <a href="assets/Mercy_Benu_CV.pdf" download class="btn-download"
+            >Download CV</a
+          >
+        </div>
+
+        <!-- Image -->
+        <div class="about-image">
+          <img src="assets/marcy.jpg" alt="Profile Photo" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="Experience" class="Experience">
+      <h2>Experience</h2>
+
+      <!-- Container for Experience cards -->
+      <div class="Experience-grid">
+        <!-- Individual Experience card -->
+        <div class="Experience-card">
+          <h3>Head of ICT - PCEA Goshen</h3>
+          <p>
+            I currently serve as the Head of the ICT Department at my local
+            church, a role I've held for the past three years. I oversee all
+            technology-related needs, ensuring a smooth user experience and
+            driving the integration of information technology into the church’s
+            operations and worship environment.
+          </p>
+          <a href="assets/Mercy_Benu_CV.pdf">See Experience</a>
+        </div>
+
+        <!-- Second Experience card -->
+        <div class="Experience-card">
+          <h3>Security Analyst, Kenya Revenue Authority</h3>
+          <p>
+            Served for one year as a Security Analyst at the Kenya Revenue
+            Authority through the Presidential Digital Talent Program (PDTP –
+            Cohort VIII), where I contributed to cybersecurity monitoring and
+            helped safeguard digital infrastructure by conducting software
+            security tests.
+          </p>
+          <a href="assets/Mercy_Benu_CV.pdf">See Experience</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <h2>Skills</h2>
+
+      <!-- List of technical skills -->
+      <ul>
+        <li>HTML5 & CSS3</li>
+        <li>JavaScript</li>
+        <li>Git & GitHub</li>
+        <li>Flutter</li>
+        <li>Responsive Design</li>
+      </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <h2>Contact Me</h2>
+
+      <!-- Simple contact form -->
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
     <footer>
-        &copy;2025 All rights reserved.
+      <div class="footer-socials">
+        <!-- Social media links -->
+        <a
+          href="https://linkedin.com/in/mercybenu"
+          target="_blank"
+          aria-label="LinkedIn"
+        >
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/mah-c" target="_blank" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="mailto:benumercy1@gmail.com" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+      <p>&copy; 2025 Mercy Benu. All rights reserved.</p>
     </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#top" class="back-to-top" aria-label="Back to Top">↑</a>
   </body>
 </html>
